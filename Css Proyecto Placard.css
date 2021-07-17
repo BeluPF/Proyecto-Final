@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Playfair Display", serif;
+}
+
+#header {
+  background-color: #D0B3CC;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#sidebar{
+  background-color: #E0E0E0;
+  padding: 10px;
+}
+
+#subtitulo{
+  padding: 20px;
+}
+
+.Menuprincipal {
+  display: flex;
+  color: 2px solid black;
+  text-decoration: none;
+  float: center;
+}
+
+.ImagenTitulo {
+  background-image: url(Perchero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 500px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.ContenedorImagenTitulo {
+  display: flex;
+  justify-content: center;
+}
+
+.Titulo {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+.espacio-menu {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Formato-Imagen {
+  padding: 5px;
+  display: inline;
+  width: 300px;
+  height: 3000px;
+}
+
+.NuevoFormato {
+  border: solid 1px black;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+th {
+  background-color: #4A1942;
+  color: white;
+}
+
+.tableClass{
+  width: 900px;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+  margin-left: 15%;
+  padding: 20px;
+}
+
+.grid-content {
+  /*para darle formato al grid general*/
+  display: grid;
+  /*width: 800px;/*si no le pongo width la grilla me toma el ancho total de la pagina*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 3fr);
+  border: none;
+  justify-content: center;
+  width: 80%;
+}
+
+.grid-content div {
+  /*para darle forma a cada cuadrado del grid*/
+  text-align: center;
+  align-items: center;
+}
+
+.ImagenesClass{
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+}
+
+/*extra small deviced cells up to 600px)*/
+@media only screen and (max-width: 600px) {
+  .grid-content {
+    display: grid;
+    /*width: 800px;/*si no le pongo width la grilla me toma el ancho total de la pagina*/
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(2, 3fr);
+    border: none;
+    justify-content: center;
+  }
+}
+
+/*small devices tablets large phones min 600px)*/
+@media only screen and (min-width: 600px) {
+  .formClass {
+    width: 20%;
+    margin: 20px;
+    padding: 15px;
+  }
+  .labelClass {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}
+
+.ProductosPrincipal{
+  display: flex;
+  padding: 20px;
+
+}
+
+.Padding{
+  padding: 20px;
+}
+
