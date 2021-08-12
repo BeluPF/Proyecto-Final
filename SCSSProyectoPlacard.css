@@ -7,25 +7,37 @@ body {
 #header {
   background-color: #D0B3CC;
   height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#sidebar{
+#sidebar {
   background-color: #E0E0E0;
   padding: 10px;
 }
 
-#subtitulo{
+#subtitulo {
   padding: 20px;
-  font-style:oblique;
+  font-style: oblique;
   font-size: 20px;
 }
 
 .Menuprincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: 2px solid black;
   text-decoration: none;
@@ -43,8 +55,12 @@ body {
 }
 
 .ContenedorImagenTitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Titulo {
@@ -56,6 +72,7 @@ body {
 ul {
   list-style-type: none;
 }
+
 .espacio-menu {
   padding-left: 30px;
   padding-right: 30px;
@@ -84,10 +101,13 @@ th {
   color: white;
 }
 
-.tableClass{
+.tableClass {
   width: 900px;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin: 20px;
   margin-left: 15%;
   padding: 20px;
@@ -95,40 +115,53 @@ th {
 
 .grid-content {
   /*para darle formato al grid general*/
+  display: -ms-grid;
   display: grid;
   /*width: 800px;/*si no le pongo width la grilla me toma el ancho total de la pagina*/
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 3fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (3fr)[2];
+      grid-template-rows: repeat(2, 3fr);
   border: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
 }
 
 .grid-content div {
   /*para darle forma a cada cuadrado del grid*/
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.ImagenesClass{
+.ImagenesClass {
   padding: 10px;
   margin: 20px;
   width: 100%;
 }
-.ImagenesClass :hover{
-  height: 250px; width: 250px;
 
+.ImagenesClass :hover {
+  height: 250px;
+  width: 250px;
 }
 
 /*extra small deviced cells up to 600px)*/
 @media only screen and (max-width: 600px) {
   .grid-content {
+    display: -ms-grid;
     display: grid;
     /*width: 800px;/*si no le pongo width la grilla me toma el ancho total de la pagina*/
-    grid-template-columns: repeat(1, 80%);
-    grid-template-rows: repeat(2, 3fr);
+    -ms-grid-columns: (80%)[1];
+        grid-template-columns: repeat(1, 80%);
+    -ms-grid-rows: (3fr)[2];
+        grid-template-rows: repeat(2, 3fr);
     border: none;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -145,20 +178,26 @@ th {
   }
 }
 
-.ProductosPrincipal{
+.ProductosPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 20px;
-
 }
 
-.Padding{
+.Padding {
   padding: 20px;
 }
 
-.footerStyle{
+.footerStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: grey;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding: 10px;
 }
+/*# sourceMappingURL=SCSSProyectoPlacard.css.map */
