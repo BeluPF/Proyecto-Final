@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-  background-color: #D0B3CC;
+  background-color: #d0b3cc;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,7 +25,7 @@ body {
 }
 
 #sidebar {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   padding: 10px;
 }
 
@@ -97,12 +97,12 @@ td {
 }
 
 th {
-  background-color: #4A1942;
+  background-color: #4a1942;
   color: white;
 }
 
 .tableClass {
-  width: 900px;
+  width: 80%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -141,6 +141,7 @@ th {
   padding: 10px;
   margin: 20px;
   width: 100%;
+  height: 300px;
 }
 
 .ImagenesClass :hover {
@@ -168,9 +169,16 @@ th {
 /*small devices tablets large phones min 600px)*/
 @media only screen and (min-width: 600px) {
   .formClass {
-    width: 20%;
     margin: 20px;
     padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .labelClass {
     margin-bottom: 20px;
@@ -199,5 +207,41 @@ th {
           justify-content: center;
   text-align: center;
   padding: 10px;
+}
+
+.logoClass {
+  height: 30px;
+  width: 30px;
+}
+
+.logoClass img {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ClassHermanas {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: baseline;
+  margin-left: 500px;
+}
+
+.ClassHermanas img {
+  border: 1px solid black;
+  width: 180px;
+  height: 180px;
 }
 /*# sourceMappingURL=SCSSProyectoPlacard.css.map */

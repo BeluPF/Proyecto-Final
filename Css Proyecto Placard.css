@@ -135,7 +135,6 @@ th {
 /*small devices tablets large phones min 600px)*/
 @media only screen and (min-width: 600px) {
   .formClass {
-    width: 20%;
     margin: 20px;
     padding: 15px;
   }
